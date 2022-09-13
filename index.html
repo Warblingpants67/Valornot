@@ -49,7 +49,293 @@
       </div>
     </div>
 
-   <div class="changelog" id="changelog"></div>
+    <div class="changelog" id="changelog">
+        <h1 class="heading" style="font-size: 40px; text-align: center">
+            Changelog
+        </h1>
+
+        <h1 class="heading">v0.4.1 - 9/12/22</h1>
+        <ul class="list">
+            <li>Fixed issue where game customization values could fail to sync</li>
+            <li>Clamped omens smoke placement distance</li>
+            <li>Omens paranoia has been modified to more closely match valorant</li>
+            <li>Added experimental spectater mode (Only accessible through debug)</li>
+        </ul>
+
+        <h1 class="heading">v0.4.0 - 9/11/22</h1>
+        <ul class="list">
+            <li>Updated Map</li>
+            <li>Fixed issue in lobby where if new player joined everyones selections are reset</li>
+            <li>Added new Agent Select Screen</li>
+            <li>Omen's shadow realm now usues a seperate camera which doesn't render players, guns, knives or the spike</li>
+            <li>Added cooldown system</li>
+            <li>Added reload indicator to compensate for lack of animations</li>
+            <li>You can no longer shoot while reloading</li>
+            <li>Guns now have total ammo, and when reloading you take from the total. When you run out of ammo the gun will not be reloaded</li>
+            <li>Guns now get full ammo at the start of the round</li>
+        </ul>
+
+        <h1 class="heading">v0.3.4 - 8/30/22</h1>
+        <ul class="list">
+            <li>Added system for holding agent abilities</li>
+            <li>Omen is no longer able to use multiple abilities at the same time</li>
+            <li>Reduced movement inaccuracy</li>
+            <li>Fixed issue where winning the game would occur a round after it should have</li>
+            <li>Fixed issue where teams wouldn't switch sides</li>
+            <li>Decreased heat cooldown for all guns</li>
+        </ul>
+
+        <h1 class="heading">v0.3.3 - 8/24/22</h1>
+        <ul class="list">
+            <li>Fixed Deathmatch issue where you wouldn't spawn correctly</li>
+            <li>Made it so enemy omen smokes are tinted a red color</li>
+            <li>Created Stinger and Odin model</li>
+            <li>Updated buy menu names to match gun names</li>
+            <li>Made it so you can see gun recoil on network players</li>
+            <li>Made the direction network players are pointing more accurate to the network players local client</li>
+            <li>Fixed issue where bullet tracers wouldnt appear at the end of a network players gun</li>
+            <li>Fixed issue where Omen could shoot when teleporting</li>
+            <li>Fixed issue where Omen could teleport into certain walls, and through the pre-round barriers</li>
+            <li>Fixed issue where Omen would always teleport slightly above the ground</li>
+            <li>Added player highlight, indicating which team a player is on</li>
+            <li>Added blood splatter, indicating when you have shot an enemy</li>
+        </ul>
+
+        <h1 class="heading">v0.3.2 - 8/11/22</h1>
+        <ul class="list">
+            <li>Added object spawning system</li>
+            <li>You can now drop spike over the network</li>
+            <li>Added framework for abilities</li>
+            <li>Added nearsight system</li>
+            <li>Updated buy menu with abilities</li>
+            <li>Made it so unavailable guns are red in the buy menu</li>
+            <li>Added omen abilities</li>
+            <li>Fixed UI issues</li>
+            <li>Fixed issue with rendering network players over transparent objects (guys be excited this is a big deal)</li>
+        </ul>
+
+        <h1 class="heading">v0.3.1 - 7/31/22</h1>
+        <ul class="list">
+            <li>You can no longer plant or defuse when dead</li>
+            <li>Buy menu actually functions as intended</li>
+            <li>You can no longer team kill</li>
+            <li>Fixed issue where all enemy players are dead and the round isnt won</li>
+            <li>Fixed issue where kill emblem would not show up when getting a kill</li>
+            <li>Dead players disappear on death</li>
+        </ul>
+
+        <h1 class="heading">v0.3.0 - 7/28/22</h1>
+        <ul class="list">
+            <li>Fixed some guns attributes to more closely match valorant</li>
+            <li>Added Spike Defuse Gamemode</li>
+            <li>Added new menu with game options and team select</li>
+            <li>Added Spike model</li>
+            <li>Added toggle between team/all chat</li>
+            <li>Knife can no longer be seen through walls</li>
+            <li>Added new flexible health system, which works for local and remote players, as well as static objects</li>
+            <li>Added top UI bar which shows teammate health and alive players</li>
+            <li>Added cred counter, and text which shows you were your creds come from</li>
+            <li>Added econ system</li>
+            <li>Bug fixes</li>
+        </ul>
+
+        <h1 class="heading">v0.2.2 - 6/21/22</h1>
+        <ul class="list">
+            <li>Added back decals (no way)</li>
+            <li>Added decal selector in pause menu</li>
+            <li>
+                Added additional keybinds for opening pause menu (Right shift, -, =)
+            </li>
+        </ul>
+
+        <h1 class="heading">v0.2.1 - 6/20/22</h1>
+        <ul class="list">
+            <li>Improved performance</li>
+            <li>Added scoping/zooming</li>
+            <li>Updated Map</li>
+            <li>Added invisible walls</li>
+            <li>Created Marshal and Classic model</li>
+            <li>Added marshal and classic</li>
+            <li>Updated buy menu</li>
+            <li>Added pings</li>
+            <li>Added conversion from Valorant units to unity units</li>
+            <li>
+                Added custom renderer passes for pings and other players (to see
+                through walls)
+            </li>
+            <li>Added walk speeds to guns</li>
+            <li>
+                Added baked lightmaps to the game to reduce amount of realtime
+                lighting
+            </li>
+            <li>Added FPS counter</li>
+        </ul>
+
+        <h1 class="heading">v0.2.0 - 6/11/22</h1>
+        <ul class="list">
+            <li>Added buy menu</li>
+            <li>Created vandal and bucky model</li>
+            <li>
+                Vandal, Bucky, Stinger and Odin have been added (Guns without models
+                use other guns models)
+            </li>
+            <li>Added buy menu</li>
+            <li>
+                Any guns which are currently created can be bought from the buy menu
+            </li>
+            <li>Gun models now use a dark grey material</li>
+            <li>Added random recoil system</li>
+            <li>New and existing guns have been given recoil values</li>
+            <li>Camera recoil has been changed slightly</li>
+        </ul>
+
+        <h1 class="heading">v0.1.7 - 6/3/22</h1>
+        <ul class="list">
+            <li>Added pause menu</li>
+            <li>Can now configure DPI</li>
+            <li>Can now see room code after joining room, in pause menu</li>
+            <li>
+                Can no longer move, jump, look around, shoot, or drop gun when in chat
+            </li>
+            <li>Added win/lose canvas</li>
+            <li>
+                Deathmatch now concludes when a player reaches 40 kills, shows the
+                correct results screen, and puts you back in the main menu
+            </li>
+            <li>Map updated</li>
+            <li>FNAF added to A site</li>
+        </ul>
+
+        <h1 class="heading">v0.1.6 - 5/26/22</h1>
+        <ul class="list">
+            <li>Added Tab Player List</li>
+            <li>UI has been updated with new font</li>
+            <li>Last used username is saved</li>
+            <li>If you leave a room the main menu loads</li>
+        </ul>
+
+        <h1 class="heading">v0.1.5 - 5/22/22</h1>
+        <ul class="list">
+            <li>Added canoe and railings to B site</li>
+            <li>Added visual gun recoil</li>
+            <li>Added doors</li>
+            <li>Max room code and username length of 20 added</li>
+            <li>Ghost Players are "fixed"</li>
+            <li>Players now disappear after leaving room</li>
+            <li>Chat now says when a player leaves</li>
+            <li>Kill and deaths are now tracked for the whole game</li>
+            <li>Kills are also tracked per life and round</li>
+            <li>
+                <i>
+                    Tab list where you can see these will be added in a future update
+                </i>
+            </li>
+            <li>Shields actually work now</li>
+            <li>You can now use the number keys to switch guns</li>
+            <li>Can no longer see enemies guns through walls</li>
+            <li>"Cool" Menu secret...?</li>
+        </ul>
+
+        <h1 class="heading">v0.1.4 - 5/15/22</h1>
+        <ul class="list">
+            <li>Ascent map is much more finished now</li>
+            <li>When falling below a certain Y-Level, your player tps back</li>
+            <li>
+                Spawn locations added (for Deathmatch and Spike defuse gamemodes)
+            </li>
+            <li>
+                Basic Deathmatch gamemode added (is default when you join a game)
+            </li>
+            <li>
+                Guns no longer shoot to the world origin when not aimed at something
+            </li>
+            <li>Main Menu now tells you when you are joining or creating a game</li>
+            <li>Held Gun Syncs Online</li>
+            <li>
+                Added functionality for syncing dropped/picked up guns, not fully
+                implemented
+            </li>
+            <li>Changed the way online players hold weapons</li>
+            <li>Shooting "Ghost players" should no longer harm real players</li>
+            <li>Small bug fixes</li>
+        </ul>
+
+        <h1 class="heading">v0.1.3 - 5/3/22</h1>
+        <ul class="list">
+            <li>
+                Decals were actually trash and were temporarily removed to improve
+                performance
+            </li>
+            <li>Network players now use Inverse Kinematics to hold weaponds</li>
+            <li>
+                Network players now rotate their arm position to match the look
+                position of the player
+            </li>
+            <li>Updated UI to match more with valorant</li>
+            <li>Network players have colliders for the head, body and legs</li>
+            <li>
+                You can now take and deal damage, because of new "Damageable Entity"
+                system
+            </li>
+            <li>
+                When lerping rotation, network players now use quaternions instead of
+                Vector3 representations of those quaternions
+            </li>
+            <li>
+                Bullets were replaced by bullet tracers (note that this is just
+                visual, the gun system has always used raycasts)
+            </li>
+            <li>Very basic and unfinished Ascent map</li>
+            <li>Small bug fixes</li>
+        </ul>
+
+        <h1 class="heading">v0.1.2 - 4/26/22</h1>
+        <ul class="list">
+            <li>Decals <i>actually</i> sync between clients</li>
+            <li>Optimized Decals a bunch</li>
+            <li>
+                Network player now linearly interpolates to position and rotation for
+                smoothness
+            </li>
+            <li>3D Gun Pickup UI</li>
+        </ul>
+
+        <h1 class="heading">v0.1.1 - 4/25/22</h1>
+        <ul class="list">
+            <li>
+                Decals should now actually sync between clients, not way after they
+                were first sprayed
+            </li>
+            <li>
+                Changed the way decals are rendered so they actually show up in webgl
+            </li>
+            <li>Added Menu Error Messages</li>
+            <li>Added Chat Box</li>
+            <li>Added Join Messages</li>
+            <li>
+                Fixed Player Manager Bug where you werent set to the correct index
+                when joining
+            </li>
+            <li>
+                Fixed bug where player object would sometimes not spawn and cause
+                errors
+            </li>
+        </ul>
+
+        <h1 class="heading">v0.1.0 - 4/23/22</h1>
+        <ul class="list">
+            <li>Sprays should now sync between clients</li>
+            <li>Movement has been tweaked</li>
+            <li>Online players now display at the correct height</li>
+            <li>Online Players now rotate to their facing position</li>
+            <li>Gravity has been increased</li>
+            <li>You can no longer jump while in the air</li>
+            <li>
+                When throwing your sidearm you no longer also throw your main at the
+                same time
+            </li>
+        </ul>
+    </div>
 
     <script>
       function PlaceChangelog() {
