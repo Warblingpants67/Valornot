@@ -54,6 +54,16 @@
               Changelog
           </h1>
 
+          <h1 class="heading">v0.4.3 - 9/29/22</h1>
+          <ul class="list">
+              <li>Added in development version of Sova</li>
+              <li>The map has been scaled down to more closely match valorant</li>
+              <li>Added heat cap to guns so it can't get infinitely high</li>
+              <li>Gravity has been modified to more closely match valorant</li>
+              <li>Air movement speed has been decreased</li>
+              <li>Blood particles have been modified to be more easily seen</li>
+          </ul>
+
           <h1 class="heading">v0.4.2 - 9/14/22</h1>
           <ul class="list">
               <li>Many bugs with omens teleport have been fixed</li>
@@ -349,8 +359,9 @@
 
       <script>
           function PlaceChangelog() {
+              var canvas = document.getElementById("unity-canvas");
               document.getElementById("changelog").style.marginTop =
-                  (screen.height - 600) / 2 + 580 + "px";
+                  ((screen.height - canvas.height) / 2) - 200 + "px";
           }
       </script>
       <script>
