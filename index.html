@@ -54,6 +54,17 @@
               Changelog
           </h1>
 
+          <h1 class="heading">v0.4.4 - 10/17/22</h1>
+          <ul class="list">
+              <li>The kill feed has been updated to more closely match valorant's</li>
+              <li>Sova's drone is now in a functional state</li>
+              <li>The agent select screen has been changed to more closely match valorant's</li>
+              <li>Fixed issues with the scene transition system</li>
+              <li>The game's UI has been updated to show the correct amount of kills on the kill emblem</li>
+              <li>Abilities can no longer be used while a menu is open</li>
+              <li>Menus cannot be opened while another menu is already open</li>
+          </ul>
+
           <h1 class="heading">v0.4.3 - 9/29/22</h1>
           <ul class="list">
               <li>Added in development version of Sova</li>
@@ -356,12 +367,11 @@
               </li>
           </ul>
       </div>
-
       <script>
           function PlaceChangelog() {
               var canvas = document.getElementById("unity-canvas");
               document.getElementById("changelog").style.marginTop =
-                  ((screen.height - canvas.height) / 2) - 200 + "px";
+                  screen.height - canvas.height + "px";
           }
       </script>
       <script>
